@@ -12,12 +12,15 @@ Clone the repository: git clone https://github.com/jahidrjs/fileUploadApi.git
 
 #### Install dependencies: npm install
 
-#### Create a .env file at the root of the project and add the following variables:
+### Create a .env file at the root of the project and add the following variables:
 
-PORT=3000
-GCLOUD_PROJECT_ID=<your-project-id>
-GCLOUD_APPLICATION_CREDENTIALS=<path-to-service-account-key>
-GCLOUD_BUCKET_NAME=<your-bucket-name>
+#### PORT=3000
+
+#### GCLOUD_PROJECT_ID=<your-project-id>
+
+#### GCLOUD_APPLICATION_CREDENTIALS=<path-to-service-account-key>
+
+#### GCLOUD_BUCKET_NAME=<your-bucket-name>
 
 #### Replace <your-project-id>, <path-to-service-account-key>, and <your-bucket-name> with your own values.
 
