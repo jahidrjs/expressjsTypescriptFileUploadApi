@@ -1,5 +1,5 @@
 # fileUploadApi
-This is a simple file upload API using Express.js and Google Cloud Storage.
+## This is a simple file upload API using Express.js and Google Cloud Storage.
 
 Prerequisites
 Node.js 14 or later
@@ -8,31 +8,36 @@ Google Cloud Storage account and a bucket
 Installation
 Clone the repository: git clone https://github.com/jahidrjs/fileUploadApi.git
 
-Change into the project directory: cd fileUploadApi
+#### Change into the project directory: cd fileUploadApi
 
-Install dependencies: npm install
+#### Install dependencies: npm install
 
-Create a .env file at the root of the project and add the following variables:
+#### Create a .env file at the root of the project and add the following variables:
 
 PORT=3000
 GCLOUD_PROJECT_ID=<your-project-id>
 GCLOUD_APPLICATION_CREDENTIALS=<path-to-service-account-key>
 GCLOUD_BUCKET_NAME=<your-bucket-name>
 
-Replace <your-project-id>, <path-to-service-account-key>, and <your-bucket-name> with your own values.
+#### Replace <your-project-id>, <path-to-service-account-key>, and <your-bucket-name> with your own values.
 
 Usage
 To start the API server, run npm start or npm run dev for development mode.
 
-API Endpoints
+## API Endpoints
 GET /: Returns a welcome message.
+
+## Upload API
 POST /files: Uploads a file and returns a JSON object containing the public URL and private key.
+## Download API
 GET /files/:publicKey: Downloads a file using the provided public key.
+## Delete API
 DELETE /files/:privateKey: Deletes a file using the provided private key.
-Testing
+
+## Testing
 To run the tests, use the command npm test.
 
-##Develop based on requirement instruction
+## Develop based on requirement instruction
 Node.js Backend code test
 Requirements
 ● All code should be commented
