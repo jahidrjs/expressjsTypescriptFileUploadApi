@@ -1,0 +1,43 @@
+{
+  "name": "meldcx",
+  "version": "1.0.0",
+  "description": "meldCX task",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json --outDir ./dist",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "jest"
+  },
+  "author": "jahid al mamun",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@google-cloud/storage": "^6.9.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-rate-limit": "^6.7.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/express": "^4.17.17",
+    "@types/express-fileupload": "^1.4.1",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.15.11",
+    "@types/uuid": "^9.0.1",
+    "babel-jest": "^29.5.0",
+    "concurrently": "^8.0.1",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.3"
+  }
+}
